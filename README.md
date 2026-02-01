@@ -8,7 +8,8 @@ An interactive web application built with **Streamlit** and **OpenCV** that allo
 Ever wondered how a computer "sees" an image? This playground demonstrates the mathematics of **Image Convolution**, a core building block of Computer Vision and AI. By sliding different "kernels" (weight matrices) over pixels, the app extracts features like edges, textures, and shapes—mimicking the early layers of a CNN.
 
 ### 🖥️ App Preview
-<img width="1919" height="915" alt="image" src="https://github.com/user-attachments/assets/2a83dcba-c68e-462b-9e99-f208f39894e9" />
+<img width="1919" height="908" alt="image" src="https://github.com/user-attachments/assets/f13c54bc-f041-476c-b86c-4a0dd4e2b8f8" />
+
 <img width="1919" height="872" alt="image" src="https://github.com/user-attachments/assets/f0c44e27-69c1-49b8-8db1-9063d5150dba" />
 
 
