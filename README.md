@@ -1,34 +1,61 @@
-🧠 CNN Kernels Visualization Playground
-An interactive web application built with Streamlit and OpenCV that allows users to visualize how Convolutional Neural Network (CNN) kernels (filters) process images in real-time.
+# 🧠 CNN Kernels Visualization Playground
 
-🚀 Overview
-Ever wondered how a computer "sees" an image? This playground demonstrates the mathematics of Image Convolution, a core building block of Computer Vision and AI. By sliding different "kernels" (weight matrices) over pixels, the app extracts features like edges, textures, and shapes—mimicking the early layers of a CNN.
+An interactive web application built with **Streamlit** and **OpenCV** that allows users to visualize how Convolutional Neural Network (CNN) kernels (filters) process images in real-time.
 
-[Insert Image of Web App Here]
-Tip: Upload your screenshot to GitHub and replace this text with: <img src="path/to/your/screenshot.png" width="800">
+---
 
-✨ Features
-Real-time Convolution: Adjust kernel intensity and see the result instantly.
+## 🚀 Overview
+Ever wondered how a computer "sees" an image? This playground demonstrates the mathematics of **Image Convolution**, a core building block of Computer Vision and AI. By sliding different "kernels" (weight matrices) over pixels, the app extracts features like edges, textures, and shapes—mimicking the early layers of a CNN.
 
-Pre-processing: Toggle Grayscale Mode to see how reducing data channels speeds up AI processing.
+### 🖥️ App Preview
+![App Screenshot](./assets/screenshot.png) 
+*(Note: Replace this path with your actual uploaded screenshot path)*
 
-Kernel Library: Explore 10+ different filters, including:
+---
 
-Edge Detection (Sobel/Laplacian): Identifies boundaries and outlines.
+## ✨ Features
+* **Real-time Convolution:** Adjust kernel intensity and see the result instantly.
+* **Pre-processing:** Toggle **Grayscale Mode** to see how reducing data channels simplifies feature detection.
+* **Kernel Library:** Explore 10+ different filters, including:
+    * **Edge Detection (Sobel/Laplacian):** Identifies boundaries and outlines.
+    * **Blurring (Gaussian/Box):** Removes noise for better feature generalization.
+    * **Sharpening:** Enhances fine details and textures.
+* **Weight Visualization:** View the actual mathematical matrix being applied to the image.
+* **Instant Download:** Save your processed "Feature Maps" directly to your device.
 
-Blurring (Gaussian/Box): Removes noise for better feature generalization.
+---
 
-Sharpening: Enhances fine details and textures.
+## 🛠️ Tech Stack
+* **Python:** Core logic and matrix manipulation.
+* **Streamlit:** Web interface and interactivity.
+* **OpenCV:** High-performance image processing.
+* **NumPy:** Mathematical array operations.
 
-Weight Visualization: View the actual mathematical matrix being applied to the image.
+---
 
-Instant Download: Save your processed "Feature Maps" directly to your device.
+## 🏃 Local Installation
 
-🛠️ Tech Stack
-Python: The core programming language.
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/harshit-singh-hs/CNN-Kernels-Visualization.git](https://github.com/harshit-singh-hs/CNN-Kernels-Visualization.git)
+    cd CNN-Kernels-Visualization
+    ```
 
-Streamlit: For building the interactive web interface.
+2.  **Install dependencies:**
+    ```bash
+    pip install streamlit opencv-python-headless numpy Pillow
+    ```
 
-OpenCV: For high-performance image processing and convolution.
+3.  **Run the app:**
+    ```bash
+    streamlit run app.py
+    ```
 
-NumPy: For handling the matrix mathematics behind the kernels.
+---
+
+## 🧮 How it Works: The CNN Connection
+In a real Neural Network, these kernel values are **learned** during training. In this app, you manually select filters to see how they highlight specific features:
+
+1.  **Input:** The raw image data (RGB or Grayscale).
+2.  **Kernel:** A sliding window ($3 \times 3$, $5 \times 5$, etc.) that performs element-wise multiplication.
+3.  **Feature Map:** The output
